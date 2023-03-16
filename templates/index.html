@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CodebuZer</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename = 'assets/vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename = 'assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{{ url_for('static', filename = 'assets/css/style.css') }}" rel="stylesheet">
+  <style>
+    #hero{
+       background: url("static/assets/img/bg3.jpg" ) top center;
+    }
+  </style>
+
+ 
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="{{ url_for('static', filename ='assets/img/abuzar_img.jpg') }} " alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Md AbuZar Khan</a></h1>
+        <div class="social-links mt-3 text-center">
+          <!--
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+          <a href="https://github.com/codebuzer" target = "_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://github.com/codebuzer" target = "_blank" class="github"><i class="bx bxl-github"></i></a>
+         
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <!--<li><a href="#blogs" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Blogs</span></a></li>-->
+          <a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>AbuZar Khan</h1>
+      <p>I'm into <span class="typed" data-typed-items="Bio-Informatics, Web Development, Human Data Science"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I am a dedicated and passionate bioinformatics professional with a strong interest in Artificial Intelligence. With a Master's degree in Bioinformatics and experience in projects related to Natural Language Processing(NLP) , Machine Learning(ML), Deep Learning(DL), and Multi-omics Analysis using Python, I have developed a strong foundation in computational biology, data analysis, and statistical modeling.Throughout my academic and professional career, I have worked on a variety of research projects that have allowed me to hone my skills in data-driven analysis and problem-solving. I am particularly interested in exploring the intersection of AI and healthcare, and how data-driven approaches can be used to accelerate drug discovery, improve diagnosis and treatment, and personalize medicine.In addition to my technical expertise, I possess excellent communication and teamwork skills that have enabled me to work collaboratively with colleagues and clients from diverse backgrounds. I am also a quick learner, adaptable, and always eager to take on new challenges and learn new skills. My goal is to apply my knowledge and experience to tackle complex problems and make a positive impact in the world. Whether it's developing advanced algorithms or collaborating with interdisciplinary teams, I am always excited about the opportunity to learn, grow, and make a difference.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="{{ url_for('static', filename ='assets/img/abuzar_img.jpg') }}   " class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Bioinformatician &amp; Web Developer.</h3>
+            <p class="fst-italic">
+             As a bioinformatician and web developer, I possess a diverse range of skills that enable me to tackle complex problems and create innovative solutions. My technical expertise includes proficiency in programming languages such as Python, as well as experience with Natural Language Processing(NLP), Data Analysis, Machine Learning and Deep Learning algorithms. In addition, I have experience with web development technologies such as HTML, CSS, and Javascript, and have worked on a variety of projects ranging from ML/DL based prediction tools to full-stack web applications.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 Jan 1998</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9517541638</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New Delhi, INDIA</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>25</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>abuzarkhan111998@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+             With a Master's degree in Bioinformatics and experience working on interdisciplinary teams, I am able to approach problems from a unique perspective that combines scientific rigor with a strong foundation in software development principles. Whether it's developing algorithms to analyze genomic data or creating user-friendly interfaces for complex software systems, I am always eager to take on new challenges and push the boundaries of what's possible.Overall, my skills and expertise as a bioinformatician and web developer enable me to create data-driven solutions that make a real impact in the world, and I am always excited about the opportunity to collaborate with others and learn new skills along the way.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>As a bioinformatician with experience in NGS data analysis, I have a strong background in genomic data analysis and have developed proficiency in using Python for data analysis and visualization. I have worked on a number of research projects that have involved the application of machine learning algorithms for the analysis of genomic data, including gene expression analysis and variant calling. My experience with deep learning and natural language processing has also allowed me to work on the analysis of large-scale genomic datasets, including the development of models for predicting disease outcomes based on genomic data. I am passionate about leveraging my skills to support research in the field of precision medicine and am always looking for new opportunities to apply my expertise in bioinformatics and data analysis.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Machine Learning <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Deep Learning <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Natural Language Processing <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">NGS Data Analysis <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Biostatistics <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+ 
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Dedicated and passionate bioinformatics graduate seeking a challenging PhD position in deep learning and machine learning. With a Master's degree in Bioinformatics and experience in projects related to NLP, machine learning, deep learning, and gene expression analysis using Python, I have developed a strong foundation in computational biology, data analysis, and statistical modeling.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>AbuZar Khan</h4>
+              <p><em>Innovative and deadline-driven Bioinformatician with 8+ months of experience in Human Data Science and building Deep Learning and Machine Learning based Predictive Models of biological data </em></p>
+              <ul>
+                <li>Shaheen bagh, Jamia Nagar, New Delhi, INDIA</li>
+                <li>(+91) 9517-54-1638</li>
+                <li>abuzarkhan111998@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Masters in Bioinformatics</h4>
+              <h5>2020 - 2022</h5>
+              <p><em>Jamia Millia Islamia, New Delhi, INDIA</em></p>
+              <p>During my Master's degree program in Bioinformatics at Jamia Millia Islamia, I maintained a CGPA of 9.02 and completed advanced coursework in subjects such as genomics, proteomics, and systems biology. I also had the opportunity to work on several research projects, including the development of a Deep learning model for predicting Antimicrobial Resistance Phenotype. Through my coursework, research, and extracurricular activities, I developed a strong foundation in bioinformatics and gained valuable skills in data analysis, programming, and scientific communication.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelors in Biosciences</h4>
+              <h5>2017 - 2020</h5>
+              <p><em>Jamia Millia Islamia, New Delhi, INDIA</em></p>
+              <p>During my Bachelor's degree program in Biosciences at Jamia Millia Islamia, I completed a variety of coursework in subjects such as genetics, biochemistry, and cell biology. I also had the opportunity to participate in several research projects, including a study on the effects of different treatments on cancer cell lines.Through my coursework, research, and extracurricular activities, I developed a strong foundation in biosciences and gained valuable skills in scientific research, communication, and leadership.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Project Associate </h4>
+              <h5>2022 - Present</h5>
+              <p><em>Council of Scientific and Industrial Research-Institute of Genomics and Integrative Biology(CSIR-IGIB), New Delhi, INDIA </em></p>
+              <ul>
+                <li>Currently working on a project named Informatics and Big Data Unit.  </li>
+                <li>Developing predictive models using deep learning and machine learning algorithms to analyze complex biological data.</li>
+                <li>Conducting data analysis and visualization using Python to generate insights and improve our understanding of complex biological systems.</li>
+                <li>Staying up-to-date with the latest advances in bioinformatics, machine learning, and data science to inform the development of new analytical tools and approaches.</li>
+                
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Master's Thesis</h4>
+              <h5>Jan, 2022 - Jun, 2022</h5>
+              <p><em>Jamia Millia islamia, New Delhi, INDIA</em></p>
+              <ul>
+                <li>Developed a deep learning model for predicting antimicrobial resistance phenotypes in bacterial strains.</li>
+                <li>Acquired fastq raw reads of the bacterial strain and used parallel processing with the dask framework for efficient preprocessing.</li>
+                <li>Developed an object-oriented pipeline for preprocessing, feature selection, and k-mer generation.</li>
+                <li>Tagged each read with its respective multilabels for classification.</li>
+                <li>Trained the model using supervised deep learning algorithms such as LSTM and BiLSTM, along with machine learning algorithms such as XgBoost and Random Forest.</li>
+                <li>Evaluated the model performance using scikit-learn classification metrics.</li>
+                <li>Developed expertise in deep learning, machine learning, and parallel processing frameworks through this project.</li>
+                <li>Gained experience in developing pipelines for data processing and analysis, as well as in developing and optimizing machine learning models for biological applications.</li>
+                <!--<li>Contributed to the development of more accurate and efficient methods for predicting antimicrobial resistance in bacterial strains through this thesis research.</li> -->
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>As a bioinformatics researcher specializing in machine learning and deep learning techniques, I have focused my work on predicting * and * infection status using * and *.</p>
+          <p>My expertise in both biology and computer science allows me to bridge the gap between these two fields and apply cutting-edge techniques to real-world problems in healthcare and medicine.</p>
+
+          
+        </div>
+        <div>
+          <h5 style="color:Tomato;">Projects:</h5>
+          <p>For my * prediction project, I developed a deep learning model that analyzed *.</p>
+          <p>In my * prediction project, I used *, with promising results.</p>
+          <p>I also worked on other related bioinformatics projects, such as *, using machine learning and other computational techniques.</p>
+        </div>
+        <div>
+          <h5 style="color:Tomato;">Results:</h5>
+
+          <p>My * prediction model achieved an accuracy rate of x% in identifying *, with a precision rate of y%.</p>
+          <p>In my * prediction project, I was able to accurately classify patients as * or not with a sensitivity of x% and specificity of y%.</p>
+          <p>Through my work, I gained valuable insights into the underlying mechanisms of * and *, which could inform new diagnostic and therapeutic strategies.</p>
+
+
+
+        </div>
+         <div>
+          <h5 style="color:Tomato;">Tools and techniques:</h5>
+
+          <p>I used a range of tools and technologies in my projects, including Python, scikit-learn, TensorFlow, and Keras for model development, as well as * and * for data analysis and visualization.</p>
+          <p>I also utilized big data framework like Dask and vaex for high-performance computing and parallel computing.</p>
+         
+          </div>
+        <div>
+          <h5 style="color:Tomato;">Publications and Presentations:</h5>
+
+          <p>My research has been * in several peer-reviewed journals, including * and *.</p>
+          <p>I have also presented my work at conferences such as * in *.</p>
+          
+          
+
+
+        </div>
+          <div>
+          <h5 style="color:Tomato;">Future Work:</h5>
+
+          <p>In the future, I hope to continue developing more accurate and scalable machine learning models for predicting * and * infection status.</p>
+          <p>I am also interested in exploring other related areas of research, such as personalized medicine and precision healthcare, using ML, DL and other computational techniques.</p>
+          
+
+
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-ml">ML Model</li>
+              <li data-filter=".filter-dl">DL Model</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename ='assets/img/portfolio/covid19_geneexpression.jpg') }} " class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename ='assets/img/portfolio/covid19_geneexpression.jpg') }} " data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cov-19 Infection Prediction - Transcriptomic Data"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename ='assets/img/portfolio/covid_19_pathway.jpg') }} " class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename ='assets/img/portfolio/pcovid_19_pathway.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cov-19 Infection Prediction - Pathway data"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+    <!--      <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename ='assets/img/portfolio/portfolio-2.jpg') }} " class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href=""{{ url_for('static', filename ='assets/img/portfolio/portfolio-2.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+         <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename ='assets/img/portfolio/portfolio-3.jpg') }} " class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename ='assets/img/portfolio/portfolio-3.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ML-Model 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-dl">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename ='assets/img/portfolio/dl_model_antimiocrobial.jpg') }}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename ='assets/img/portfolio/dl_model_antimiocrobial.jpg') }} " data-gallery="portfolioGallery" class="portfolio-lightbox" title="AMR Phenotype Prediction"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+       <!--     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename ='assets/img/portfolio/portfolio-5.jpg') }} " data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+       <!--   <div class="col-lg-4 col-md-6 portfolio-item filter-ml">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename ='assets/img/portfolio/portfolio-6.jpg') }} " class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="static/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ml-Model 4"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+        <!--  <div class="col-lg-4 col-md-6 portfolio-item filter-dl">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename ='assets/img/portfolio/portfolio-7.jpg') }} " class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename ='assets/img/portfolio/portfolio-7.jpg') }} " data-gallery="portfolioGallery" class="portfolio-lightbox" title="DL-Model 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+         <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-dl">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename ='assets/img/portfolio/portfolio-8.jpg') }} " class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename ='assets/img/portfolio/portfolio-8.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="DL-Model 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+       <!--   <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{{ url_for('static', filename ='assets/img/portfolio/portfolio-9.jpg') }} " class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{{ url_for('static', filename ='assets/img/portfolio/portfolio-9.jpg') }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+ 
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+         
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Shaheen Bagh, New Delhi, INDIA 110025</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>abuzarkhan111998@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9517 54 1638</p>
+              </div>
+
+              <img src="{{ url_for('static', filename ='assets/img/jama_masjid.jpg') }} ", frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="static/forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>2023 Abuzar</span></strong>
+      </div>
+      <div class="credits">
+      
+        Designed by <a>Abuzar</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename = 'assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'assets/vendor/typed.js/typed.min.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ url_for('static', filename = 'assets/vendor/php-email-form/validate.js') }}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename = 'assets/js/main.js') }}"></script>
+
+</body>
+
+</html>
